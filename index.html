@@ -7,13 +7,14 @@
   <title>Alec Dye | Frontend Web Developer</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header & Nav -->
-  <header>
+  <header class="header">
     <!-- <h1 class="logo">Alec Dye</h1> -->
-    <div class="logo"><img src="" alt=""></div>
+    <div class="logo"><img src="https://via.placeholder.com/200x75" alt=""></div>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
@@ -29,29 +30,61 @@
     <h1 class="section__title section__title--intro">
       Hey! I'm <strong>Alec Dye</strong>
     </h1>
-    <p class="section__subtitle section__subtitle--intro">Front-End Web Developer</p>
+    <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
     <img src="img/profile.jpg" alt="Alec Dye smiling with oversized 1980s styled programmer glasses" class="intro__img">
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services__body">
+      <div class="services__card">
+        <h3>Consultation</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error facilis asperiores sed voluptate odit earum, quae, quos itaque et commodi ex eligendi exercitationem quia quaerat doloremque. Cumque debitis beatae similique.</p>
+      </div> <!-- / services__card-->
+      <div class="services__card">
+        <h3>Development</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error facilis asperiores sed voluptate odit earum, quae, quos itaque et commodi ex eligendi exercitationem quia quaerat doloremque. Cumque debitis beatae similique.</p>
+      </div> <!-- / services__card-->
+      <div class="services__card">
+        <h3>Wordpress</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error facilis asperiores sed voluptate odit earum, quae, quos itaque et commodi ex eligendi exercitationem quia quaerat doloremque. Cumque debitis beatae similique.</p>
+      </div> <!-- / services__card-->
+    </div> <!-- / services__body-->
+
+    <a href="#projects" class="btn">View Projects</a>
   </section>
 
   <!-- About me -->
   <section class="about" id="about">
     <h2 class="section__title section__title--about">Who I am</h2>
-    <p class="section__subtitle section__subtitle--about"></p>
-
-    <!-- Add social-list here? -->
+    <p class="section__subtitle section__subtitle--about">Developer based out of LA</p>
 
     <div class="about__body">
-      <p></p>
-      <p></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quibusdam officiis debitis deleniti minus maxime consequatur! Vero natus non laudantium.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores accusantium facilis a animi quia dolorum tempora totam, minima quasi sequi!</p>
     </div>
 
-    <img src="" alt="Alec doing cool stuff">
+    <img src="https://via.placeholder.com/200x350" alt="Alec doing cool stuff" class="about__img">
   </section>
 
   <!-- Skills -->
   <section class="skills" id="skills">
     <h2 class="section__title section__title--skills">What I know</h2>
-    <p class="section__subtitle section__subtitle--skills"></p>
+    <div class="skills__body">
+      <ul class="skills__list">
+        <li class="skills__item">HTML / CSS</li>
+        <li class="skills__item">Figma</li>
+        <li class="skills__item">Git Version Control</li>
+        <li class="skills__item">JavaScript</li>
+        <li class="skills__item">Sass</li>
+        <li class="skills__item">Bootstrap</li>
+        <li class="skills__item">React.js</li>
+        <li class="skills__item">Node.js</li>
+        <li class="skills__item">MySQL</li>
+        <li class="skills__item">WordPress</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Projects -->
@@ -67,18 +100,18 @@
   <!-- Contact -->
   <section class="contact" id="contact">
     <h2 class="section__title section__title--contact">Contact Me</h2>
-    <p class="section__subtitle section__subtitle--contact"></p>
+    <!-- <p class="section__subtitle section__subtitle--contact"></p> -->
 
-    <!-- <a href="mailto:alecdye@gmail.com">Email me!</a> -->
+      <a href="mailto:alecdye@gmail.com" class="contact__link btn"><i class="fas fa-envelope fa-2x"></i> Email me</a>
 
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <ul class="social-list">
-      <li class="social-list__item"><a href="#" class="social-list__link">a</a></li>
-      <li class="social-list__item"><a href="#" class="social-list__link">b</a></li>
-      <li class="social-list__item"><a href="#" class="social-list__link">c</a></li>
+      <li class="social-list__item"><a href="https://twitter.com/alec_dye" class="social-list__link fab fa-twitter fa-2x"></a></li>
+      <li class="social-list__item"><a href="https://github.com/AlecDye" class="social-list__link fab fa-github fa-2x"></a></li>
+      <li class="social-list__item"><a href="https://www.linkedin.com/in/alecdye/" class="social-list__link fab fa-linkedin fa-2x"></a></li>
     </ul>
     <small>Copyright Alec Dye 2021</small>
   </footer>
